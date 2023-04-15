@@ -1,0 +1,2 @@
+import{A as t}from"./index.b81e61fc.js";import"./index.159744a6.js";import"./iframe.ec97dcda.js";import"./index.015c0585.js";import"./jsx-runtime.6ca7c6c6.js";const i={title:"Data display/Avatar",component:t,args:{src:"https://github.com/rogeraf15.png",alt:"Roger Fernandes"},argTypes:{src:{control:{type:"text"}}}},p={},c={args:{src:void 0}},m=["Primary","WithFallback"];export{p as Primary,c as WithFallback,m as __namedExportsOrder,i as default};
+//# sourceMappingURL=Avatar.stories.8cdbf2e1.js.map
