@@ -1,4 +1,4 @@
-import { Meta, StoryObj } from '@storybook/react'
+import type { Meta, StoryObj } from '@storybook/react'
 import { Text, TextProps } from '@ignite-ui/react'
 
 export default {
@@ -7,7 +7,7 @@ export default {
   args: {
     size: 'md',
     children:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia non cum consequuntur ut necessitatibus, modi at magnam nulla labore eligendi doloribus numquam asperiores, animi quae maxime error deleniti quos corrupti?',
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro reprehenderit est veniam? Rem recusandae sint perspiciatis debitis corrupti. Deserunt neque exercitationem illo voluptatum laudantium culpa suscipit accusantium blanditiis voluptas numquam.',
   },
   argTypes: {
     size: {
@@ -37,6 +37,7 @@ export const Primary: StoryObj<TextProps> = {}
 
 export const CustomTag: StoryObj<TextProps> = {
   args: {
+    children: 'Strong text',
     as: 'strong',
   },
 }

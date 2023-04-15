@@ -1,8 +1,8 @@
 import {
   colors,
+  fonts,
   fontSizes,
   fontWeights,
-  fonts,
   lineHeights,
   radii,
   space,
@@ -24,6 +24,7 @@ export const {
     height: 'space',
     width: 'space',
   },
+
   theme: {
     colors,
     fontSizes,

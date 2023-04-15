@@ -1,9 +1,10 @@
-import { Meta, StoryObj } from '@storybook/react'
+import type { Meta, StoryObj } from '@storybook/react'
 import { Box, Text, TextArea, TextAreaProps } from '@ignite-ui/react'
 
 export default {
   title: 'Form/Text Area',
   component: TextArea,
+  args: {},
   decorators: [
     (Story) => {
       return (
@@ -12,7 +13,7 @@ export default {
           css={{ display: 'flex', flexDirection: 'column', gap: '$2' }}
         >
           <Text size="sm">Observations</Text>
-          <Story />
+          {Story()}
         </Box>
       )
     },
@@ -21,7 +22,7 @@ export default {
 
 export const Primary: StoryObj<TextAreaProps> = {
   args: {
-    placeholder: 'Add your observations here...',
+    placeholder: 'Add any observations...',
   },
 }
 

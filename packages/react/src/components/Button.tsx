@@ -1,4 +1,4 @@
-import { ComponentProps } from 'react'
+import { ComponentProps, ElementType } from 'react'
 import { styled } from '../styles'
 
 export const Button = styled('button', {
@@ -36,22 +36,23 @@ export const Button = styled('button', {
     variant: {
       primary: {
         color: '$white',
-        backgroundColor: '$ignite500',
+        background: '$ignite500',
 
         '&:not(:disabled):hover': {
-          backgroundColor: '$ignite300',
+          background: '$ignite300',
         },
 
         '&:disabled': {
           backgroundColor: '$gray200',
         },
       },
+
       secondary: {
         color: '$ignite300',
         border: '2px solid $ignite500',
 
         '&:not(:disabled):hover': {
-          backgroundColor: '$ignite500',
+          background: '$ignite500',
           color: '$white',
         },
 
@@ -60,11 +61,11 @@ export const Button = styled('button', {
           borderColor: '$gray200',
         },
       },
+
       tertiary: {
         color: '$gray100',
 
         '&:not(:disabled):hover': {
-          backgroundColor: '$ignite500',
           color: '$white',
         },
 
@@ -78,6 +79,7 @@ export const Button = styled('button', {
       sm: {
         height: 38,
       },
+
       md: {
         height: 46,
       },
@@ -90,6 +92,8 @@ export const Button = styled('button', {
   },
 })
 
-export interface ButtonProps extends ComponentProps<typeof Button> {}
+export interface ButtonProps extends ComponentProps<typeof Button> {
+  as?: ElementType
+}
 
 Button.displayName = 'Button'

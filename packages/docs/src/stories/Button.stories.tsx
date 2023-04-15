@@ -1,6 +1,6 @@
-import { ArrowRight } from 'phosphor-react'
-import { Meta, StoryObj } from '@storybook/react'
+import type { Meta, StoryObj } from '@storybook/react'
 import { Button, ButtonProps } from '@ignite-ui/react'
+import { ArrowRight } from 'phosphor-react'
 
 export default {
   title: 'Form/Button',
@@ -9,6 +9,7 @@ export default {
     children: 'Send',
     variant: 'primary',
     size: 'md',
+    disabled: false,
   },
   argTypes: {
     variant: {
@@ -28,9 +29,7 @@ export default {
         type: 'boolean',
       },
     },
-    onClick: {
-      action: 'click',
-    },
+    onClick: { action: 'clicked' },
   },
 } as Meta<ButtonProps>
 
